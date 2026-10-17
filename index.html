@@ -1,0 +1,316 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veloura Beauty | Makeup & Cosmetics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement">
+        YOUR BEAUTY, YOUR RULES — DISCOVER YOUR NEW FAVORITES
+    </div>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <a href="#home" class="logo">veloura<span>.</span></a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+            <i class="bi bi-list"></i>
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#products">Shop</a>
+            <a href="#about">Our Story</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-icons">
+            <a href="#products" aria-label="Search products"><i class="bi bi-search"></i></a>
+            <a href="#products" class="cart-link" aria-label="Shopping cart">
+                <i class="bi bi-bag"></i>
+                <span id="cartCount">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="eyebrow">THE ART OF BEAUTY</span>
+
+                <h1>Unveil Your<br><span>Natural Beauty.</span></h1>
+
+                <p>
+                    Beauty that feels like you. Discover thoughtfully
+                    selected makeup essentials made for every version of you.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">SHOP COLLECTION <i class="bi bi-arrow-up-right"></i></a>
+                    <a href="#about" class="text-link">Discover our story</a>
+                </div>
+
+                <div class="hero-note">
+                    <i class="bi bi-stars"></i>
+                    A little beauty. A lot of confidence.
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1100&q=85"
+                    alt="Beautiful makeup and beauty essentials"
+                >
+                <div class="image-label">
+                    <span>YOUR DAILY RITUAL</span>
+                    <strong>Beauty, reimagined.</strong>
+                </div>
+                <div class="hero-stamp">
+                    <i class="bi bi-flower1"></i>
+                    <span>MADE FOR<br>YOUR GLOW</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits -->
+        <section class="benefits">
+            <div><i class="bi bi-heart"></i><span>Beauty for Everyone</span></div>
+            <div><i class="bi bi-stars"></i><span>Everyday Essentials</span></div>
+            <div><i class="bi bi-gift"></i><span>Made for Gifting</span></div>
+            <div><i class="bi bi-droplet-half"></i><span>Your Glow, Your Way</span></div>
+        </section>
+
+        <!-- Categories -->
+        <section class="categories section-padding" id="categories">
+            <div class="section-heading">
+                <span class="eyebrow">FIND YOUR FAVORITE</span>
+                <h2>Explore the <span>beauty edit.</span></h2>
+                <p>Your beauty routine, one lovely discovery at a time.</p>
+            </div>
+
+            <div class="category-grid">
+                <a href="#products" class="category-card" data-category="Lipstick">
+                    <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=600&q=80" alt="Lipstick collection">
+                    <div class="category-overlay">
+                        <span>01 / LIPS</span>
+                        <h3>Lip Essentials <i class="bi bi-arrow-up-right"></i></h3>
+                    </div>
+                </a>
+
+                <a href="#products" class="category-card" data-category="Face">
+                    <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=600&q=80" alt="Face makeup collection">
+                    <div class="category-overlay">
+                        <span>02 / FACE</span>
+                        <h3>Face & Complexion <i class="bi bi-arrow-up-right"></i></h3>
+                    </div>
+                </a>
+
+                <a href="#products" class="category-card" data-category="Eyes">
+                    <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=600&q=80" alt="Eye makeup collection">
+                    <div class="category-overlay">
+                        <span>03 / EYES</span>
+                        <h3>Eye Essentials <i class="bi bi-arrow-up-right"></i></h3>
+                    </div>
+                </a>
+
+                <a href="#products" class="category-card" data-category="Skincare">
+                    <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=80" alt="Skincare products">
+                    <div class="category-overlay">
+                        <span>04 / CARE</span>
+                        <h3>Skin & Glow <i class="bi bi-arrow-up-right"></i></h3>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Products -->
+        <section class="products-section section-padding" id="products">
+            <div class="section-heading">
+                <span class="eyebrow">THE VEL0URA COLLECTION</span>
+                <h2>Little things, <span>big glow.</span></h2>
+                <p>Meet the essentials you'll keep reaching for.</p>
+            </div>
+
+            <div class="shop-toolbar">
+                <div class="filter-buttons" id="filterButtons">
+                    <button class="filter-btn active" data-filter="All">All Products</button>
+                    <button class="filter-btn" data-filter="Lipstick">Lips</button>
+                    <button class="filter-btn" data-filter="Face">Face</button>
+                    <button class="filter-btn" data-filter="Eyes">Eyes</button>
+                    <button class="filter-btn" data-filter="Skincare">Skincare</button>
+                </div>
+
+                <label class="search-box">
+                    <i class="bi bi-search"></i>
+                    <input type="search" id="searchInput" placeholder="Search products..." aria-label="Search products">
+                </label>
+            </div>
+
+            <div class="product-grid" id="productGrid">
+
+                <article class="product-card" data-category="Lipstick" data-name="Velvet Rose Lipstick" data-price="1299">
+                    <div class="product-image">
+                        <span class="product-badge">BESTSELLER</span>
+                        <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=700&q=80" alt="Velvet Rose lipstick" loading="lazy">
+                        <button class="quick-add" data-name="Velvet Rose Lipstick" data-price="1299">ADD TO BAG <i class="bi bi-plus-lg"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <div><span class="product-type">LIPS</span><h3>Velvet Rose Lipstick</h3></div>
+                        <span class="price">Rs. 1,299</span>
+                    </div>
+                    <div class="product-rating"><i class="bi bi-star-fill"></i> 4.9 <span>(24 reviews)</span></div>
+                </article>
+
+                <article class="product-card" data-category="Face" data-name="Soft Glow Blush" data-price="1599">
+                    <div class="product-image">
+                        <span class="product-badge">NEW</span>
+                        <img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&w=700&q=80" alt="Soft Glow blush makeup" loading="lazy">
+                        <button class="quick-add" data-name="Soft Glow Blush" data-price="1599">ADD TO BAG <i class="bi bi-plus-lg"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <div><span class="product-type">FACE</span><h3>Soft Glow Blush</h3></div>
+                        <span class="price">Rs. 1,599</span>
+                    </div>
+                    <div class="product-rating"><i class="bi bi-star-fill"></i> 4.8 <span>(18 reviews)</span></div>
+                </article>
+
+                <article class="product-card" data-category="Eyes" data-name="Dreamy Eyes Palette" data-price="2199">
+                    <div class="product-image">
+                        <span class="product-badge">FAN FAVORITE</span>
+                        <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=700&q=80" alt="Dreamy eye makeup palette" loading="lazy">
+                        <button class="quick-add" data-name="Dreamy Eyes Palette" data-price="2199">ADD TO BAG <i class="bi bi-plus-lg"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <div><span class="product-type">EYES</span><h3>Dreamy Eyes Palette</h3></div>
+                        <span class="price">Rs. 2,199</span>
+                    </div>
+                    <div class="product-rating"><i class="bi bi-star-fill"></i> 4.9 <span>(32 reviews)</span></div>
+                </article>
+
+                <article class="product-card" data-category="Skincare" data-name="Dew Drop Serum" data-price="1899">
+                    <div class="product-image">
+                        <span class="product-badge">GLOW PICK</span>
+                        <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=700&q=80" alt="Dew Drop skincare serum" loading="lazy">
+                        <button class="quick-add" data-name="Dew Drop Serum" data-price="1899">ADD TO BAG <i class="bi bi-plus-lg"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <div><span class="product-type">SKINCARE</span><h3>Dew Drop Serum</h3></div>
+                        <span class="price">Rs. 1,899</span>
+                    </div>
+                    <div class="product-rating"><i class="bi bi-star-fill"></i> 4.7 <span>(16 reviews)</span></div>
+                </article>
+
+                <article class="product-card" data-category="Face" data-name="Silk Touch Foundation" data-price="2499">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=700&q=80" alt="Silk Touch foundation and makeup" loading="lazy">
+                        <button class="quick-add" data-name="Silk Touch Foundation" data-price="2499">ADD TO BAG <i class="bi bi-plus-lg"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <div><span class="product-type">FACE</span><h3>Silk Touch Foundation</h3></div>
+                        <span class="price">Rs. 2,499</span>
+                    </div>
+                    <div class="product-rating"><i class="bi bi-star-fill"></i> 4.8 <span>(21 reviews)</span></div>
+                </article>
+
+                <article class="product-card" data-category="Lipstick" data-name="Nude Muse Lip Gloss" data-price="999">
+                    <div class="product-image">
+                        <img src="./image/Nude Brown Lip Gloss _ Glossy Nude Lip Color _ Caramel Brown Lips.jfif Brown Lip Gloss _ Glossy Nude Lip Color _ Caramel Brown Lips.jfif" alt="Nude Muse lip gloss" loading="lazy">
+                        <button class="quick-add" data-name="Nude Muse Lip Gloss" data-price="999">ADD TO BAG <i class="bi bi-plus-lg"></i></button>
+                    </div>
+                    
+                    <div class="product-rating"><i class="bi bi-star-fill"></i> 4.8 <span>(27 reviews)</span></div>
+                </article>
+
+            </div>
+
+            <p class="no-results" id="noResults" hidden>No products found. Try another search.</p>
+        </section>
+
+        <!-- Brand Story -->
+        <section class="story-section" id="about">
+            <div class="story-image">
+                <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=85" alt="Beauty portrait celebrating natural beauty" loading="lazy">
+            </div>
+            <div class="story-content">
+                <span class="eyebrow">A NOTE FROM VELOURA</span>
+                <h2>Beauty isn't about changing who you are. <span>It's about celebrating it.</span></h2>
+                <p>
+                    We believe makeup is a little moment of self-expression.
+                    From your everyday essentials to your special occasion
+                    favorites, discover beauty that feels uniquely yours.
+                </p>
+                <a href="#products" class="btn btn-primary">EXPLORE THE COLLECTION <i class="bi bi-arrow-up-right"></i></a>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter" id="contact">
+            <span class="eyebrow">A LITTLE LOVE IN YOUR INBOX</span>
+            <h2>Let's make room for <span>more beauty.</span></h2>
+            <p>Get beauty inspiration, new arrivals and special offers.</p>
+
+            <form id="newsletterForm" class="newsletter-form">
+                <input type="email" id="newsletterEmail" placeholder="Enter your email address" aria-label="Email address" required>
+                <button type="submit">JOIN US <i class="bi bi-arrow-right"></i></button>
+            </form>
+            <small id="newsletterMessage">By subscribing, you agree to receive beauty updates.</small>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="#home" class="logo">veloura<span>.</span></a>
+                <p>Your beauty. Your expression.<br>A little glow goes a long way.</p>
+                <div class="social-links">
+                    <a href="#contact" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#contact" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+                    <a href="#contact" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4>EXPLORE</h4>
+                <a href="#home">Home</a>
+                <a href="#categories">Categories</a>
+                <a href="#products">Shop All</a>
+                <a href="#about">Our Story</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>NEED HELP?</h4>
+                <a href="#contact">Contact Us</a>
+                <a href="#contact">Shipping Information</a>
+                <a href="#contact">Returns & Exchanges</a>
+                <a href="#contact">FAQs</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Veloura Beauty. All rights reserved.</p>
+            <p>Made with <i class="bi bi-heart-fill"></i> for beauty lovers.</p>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
